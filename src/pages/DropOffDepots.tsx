@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
 
 const DropOffDepots: React.FC = () => {
@@ -6,12 +6,16 @@ const DropOffDepots: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
-                <IonToolbar>
-                    <IonTitle>Drop-off Depots</IonTitle>
+                <IonToolbar color={'success'}>
+                    <IonButton slot='start' color={'success'}>
+                        <IonBackButton>
+                        </IonBackButton>
+                    </IonButton>
+                    <IonTitle>WasteWise</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent className="ion-padding">
-                UI goes here...
+                <h1>Drop-off Depots</h1>
             </IonContent>
         </IonPage>
     );

@@ -1,7 +1,5 @@
 import { IonBackButton, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-import BackIcon from '../assets/back.png';
-import { caretBack } from 'ionicons/icons';
 
 const Recycle: React.FC = () => {
 
