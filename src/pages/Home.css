@@ -1,9 +1,79 @@
 #menu {
-    border-radius: 25px 25px 50px 50px;
+    border-radius: 25px 25px 40px 40px;
     overflow:hidden;
 }
 
-#menu img {
-    padding-top: 50px;
-    height: 20vh;
+#menuicon {
+    height: 13vh;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 10;
+}
+
+#spanCol {
+    height: 12vh;
+}
+
+#recycleBtn {
+    background: #53B9FE;
+    height: 85%;
+    border-radius: 25px
+}
+
+#compostBtn {
+    background: #39B54A;
+    height: 85%;
+    border-radius: 25px
+}
+
+#garbageBtn {
+    background: black;
+    height: 85%;
+    border-radius: 25px
+}
+
+#yardBtn {
+    background: #C49A6C;
+    height: 85%;
+    border-radius: 25px
+}
+
+#recycleBtn img {
+    height: 25px;
+}
+
+#compostBtn img {
+    height: 25px;
+}
+
+#garbageBtn img {
+    height: 25px;
+}
+
+#yardBtn img {
+    height: 25px;
+}
+
+.feature-card ion-card {
+    border: 1px #027F73 solid;
+    border-radius: 25px;
+    -moz-box-shadow: 0 0 2px 2px yellowgreen;
+    -webkit-box-shadow: 0 0 2px 2px yellowgreen;
+    box-shadow: 0 0 2px 2px yellowgreen;
+    height: 150px;
+}
+
+.feature-card ion-card-title {
+    padding-top: 2%;
+}
+
+.feature-card img {
+    height: 70px;
+    margin: auto;
+}
+
+.description-card ion-card {
+    border: 1.5px #027F73 solid;
+    border-radius: 25px;
 }

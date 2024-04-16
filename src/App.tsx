@@ -23,6 +23,14 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Recycle from './pages/Recycle';
+import Compost from './pages/Compost';
+import Grabage from './pages/Garbage';
+import Yard from './pages/Yard';
+import ScanAndSort from './pages/ScanAndSort';
+import CollectionSechdule from './pages/CollectionSechdule';
+import DropOffDepots from './pages/DropOffDepots';
+import Chatbot from './pages/Chatbot';
 
 setupIonicReact();
 
@@ -40,6 +48,14 @@ const App: React.FC = () => (
           <Login />
         </Route>
         <Route component={Register} path={"/register"} exact />
+        <Route component={Recycle} path={"/wastewise/recycle"} exact />
+        <Route component={Compost} path={"/wastewise/compost"} exact />
+        <Route component={Grabage} path={"/wastewise/garbage"} exact />
+        <Route component={Yard} path={"/wastewise/yard"} exact />
+        <Route component={ScanAndSort} path={"/wastewise/scan&sort"} exact />
+        <Route component={CollectionSechdule} path={"/wastewise/collection-schedule"} exact />
+        <Route component={DropOffDepots} path={"/wastewise/drop-off-location"} exact />
+        <Route component={Chatbot} path={"/wastewise/chatbot"} exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
