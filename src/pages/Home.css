@@ -62,6 +62,7 @@
     -webkit-box-shadow: 0 0 2px 2px yellowgreen;
     box-shadow: 0 0 2px 2px yellowgreen;
     height: 150px;
+    width: 95%;
 }
 
 .feature-card ion-card-title {
