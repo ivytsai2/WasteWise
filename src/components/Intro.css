@@ -1,0 +1,30 @@
+.swiper {
+  height: 100vh;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-slide img{
+  width: 80%;
+}
+
+#appName {
+  color: #027F73;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#discription ion-text{
+  width: 85%;
+}
+
+#discription img{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

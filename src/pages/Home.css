@@ -1,0 +1,9 @@
+#menu {
+    border-radius: 25px 25px 50px 50px;
+    overflow:hidden;
+}
+
+#menu img {
+    padding-top: 50px;
+    height: 20vh;
+}
