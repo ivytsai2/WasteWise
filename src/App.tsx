@@ -31,6 +31,7 @@ import ScanAndSort from './pages/ScanAndSort';
 import CollectionSechdule from './pages/CollectionSechdule';
 import DropOffDepots from './pages/DropOffDepots';
 import Chatbot from './pages/Chatbot';
+import List from './pages/List';
 
 setupIonicReact();
 
@@ -56,6 +57,7 @@ const App: React.FC = () => (
         <Route component={CollectionSechdule} path={"/wastewise/collection-schedule"} exact />
         <Route component={DropOffDepots} path={"/wastewise/drop-off-location"} exact />
         <Route component={Chatbot} path={"/wastewise/chatbot"} exact />
+        <Route component={List} path={"/wastewise/list"} exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

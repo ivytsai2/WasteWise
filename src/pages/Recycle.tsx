@@ -1,8 +1,9 @@
 import { IonBackButton, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Recycle: React.FC = () => {
-
+    const url = "https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/set-out-tips/"
+    
     return (
         <IonPage>
             <IonHeader>
@@ -14,7 +15,7 @@ const Recycle: React.FC = () => {
                     <IonTitle>WasteWise</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding">
+            <IonContent fullscreen className="ion-padding">
                 <h1>Recycle - Blue Bin</h1>
                 <ul>
                     <li>Place bins/items at curbside before 7 a.m. the day of collection and no earlier than 8 p.m. the night before.</li>
@@ -31,7 +32,7 @@ const Recycle: React.FC = () => {
                     <br />
                     <li>Wash bins regularly with dish soap and water.</li>
                 </ul>
-                <a href='https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/set-out-tips/'>Learn more</a>
+                <a href={url}>Learn more</a>
             </IonContent>
         </IonPage>
     );

@@ -1,5 +1,5 @@
 import { IonButton, IonText} from '@ionic/react';
-import React, { Children } from 'react';
+import React from 'react';
 import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import 'swiper/css';
 import './Intro.css'
