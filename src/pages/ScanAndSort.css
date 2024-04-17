@@ -6,11 +6,14 @@
     background-size: cover;
 }
 
-.image-div {
-    position: 'relative';
-    display: 'inline-block';
+#image-div {
+    position: relative;
+    margin: auto;
+    width: 416px;
+    height: 416px;
 }
 
-.image-div img {
-    width:100%;
+#image-div img {
+    width: 416px;
+    height: 416px;
 }
