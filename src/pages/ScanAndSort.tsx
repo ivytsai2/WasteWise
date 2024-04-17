@@ -50,9 +50,11 @@ const ScanAndSort: React.FC = () => {
                     return 'other';
            }
         };
-    
-        const cat = getCategory(result['item']);
-        setCategory(cat)
+        
+        if (result) {
+            const cat = getCategory(result['item']);
+            setCategory(cat)
+        }
     };
 
     return (
