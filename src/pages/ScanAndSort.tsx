@@ -1,8 +1,9 @@
 import { Camera, CameraResultType } from '@capacitor/camera';
-import { IonBackButton, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React, { useEffect, useState } from 'react';
 import './ScanAndSort.css';
 import CameraIcon from '../assets/camera.png';
+import { chatbox, homeSharp, camera } from 'ionicons/icons';
 
 const ScanAndSort: React.FC = () => {
     const [image, setImage] = useState<any>(null);
@@ -153,6 +154,19 @@ const ScanAndSort: React.FC = () => {
                     </div>                  
                 ):<div></div>}
             </IonContent> 
+            <IonFooter>
+                <IonToolbar className="ion-text-center">
+                    <IonButton routerLink='../wastewise/chatbot' fill='clear' shape='round'>
+                        <IonIcon icon={chatbox} slot="icon-only"></IonIcon>
+                    </IonButton>
+                    <IonButton routerLink='../' fill='clear' shape='round' size='large'>
+                        <IonIcon icon={homeSharp} slot="icon-only"></IonIcon>
+                    </IonButton>
+                    <IonButton color={'warning'} fill='clear' shape='round'>
+                        <IonIcon icon={camera} slot="icon-only"></IonIcon>
+                    </IonButton>
+                </IonToolbar>
+            </IonFooter>
         </IonPage>
     );
 };

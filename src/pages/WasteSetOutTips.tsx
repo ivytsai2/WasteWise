@@ -1,7 +1,8 @@
-import { IonBackButton, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
 import { useLocation } from 'react-router';
 import './WasteSetOutTips.css'
+import { chatbox, homeSharp, camera } from 'ionicons/icons';
 
 const Recycle: React.FC = () => {
     const url = "https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/set-out-tips/"
@@ -88,9 +89,22 @@ const Recycle: React.FC = () => {
                     ))}
                 </ul>
                 <div className='ion-text-center'>
-                    <a href={getUrl()}>Learn more</a>
+                    <a href={getUrl()}><p className='link-style'>Learn more</p></a>
                 </div>
             </IonContent>
+            <IonFooter>
+                <IonToolbar className="ion-text-center">
+                    <IonButton routerLink='../wastewise/chatbot' fill='clear' shape='round'>
+                        <IonIcon icon={chatbox} slot="icon-only"></IonIcon>
+                    </IonButton>
+                    <IonButton routerLink='../' fill='clear' shape='round' size='large'>
+                        <IonIcon icon={homeSharp} slot="icon-only"></IonIcon>
+                    </IonButton>
+                    <IonButton routerLink='../wastewise/scan&sort' fill='clear' shape='round'>
+                        <IonIcon icon={camera} slot="icon-only"></IonIcon>
+                    </IonButton>
+                </IonToolbar>
+            </IonFooter>
         </IonPage>
     );
 };

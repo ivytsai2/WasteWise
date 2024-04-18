@@ -16,6 +16,7 @@ import { Preferences } from '@capacitor/preferences';
 import { Redirect, Route } from 'react-router';
 import List from './List';
 import { Link } from 'react-router-dom';
+import {homeSharp, chatbox, camera} from 'ionicons/icons'
 
 const Home: React.FC = () => {
   const INTRO_KEY = 'intro-seen';
@@ -144,7 +145,8 @@ const Home: React.FC = () => {
                 </IonCard>
               </IonCol>
               <IonCol class='ion-text-center feature-card'>
-                <IonCard onClick={toSchedule}>
+                <IonCard //onClick={toSchedule}
+                >
                   <IonCardHeader>
                     <img src={ScheduleIcon} alt='Schedule Icon'/>
                     <IonCardTitle>Collection Schedule</IonCardTitle>
@@ -154,7 +156,8 @@ const Home: React.FC = () => {
             </IonRow>
             <IonRow>
               <IonCol class='ion-text-center feature-card'>
-                <IonCard onClick={toMap}>
+                <IonCard //onClick={toMap}
+                >
                   <IonCardHeader>
                     <img src={MapIcon} alt='Map Icon'/>
                     <IonCardTitle>Drop-off Depots</IonCardTitle>
@@ -189,8 +192,16 @@ const Home: React.FC = () => {
           </IonButton>
         </IonContent>
         <IonFooter>
-          <IonToolbar>
-            <IonTitle>Footer</IonTitle>
+          <IonToolbar className="ion-text-center">
+            <IonButton routerLink='wastewise/chatbot' fill='clear' shape='round'>
+              <IonIcon icon={chatbox} slot="icon-only"></IonIcon>
+            </IonButton>
+            <IonButton fill='clear' color={'warning'} shape='round' size='large'>
+              <IonIcon icon={homeSharp} slot="icon-only"></IonIcon>
+            </IonButton>
+            <IonButton routerLink='wastewise/scan&sort' fill='clear' shape='round'>
+              <IonIcon icon={camera} slot="icon-only"></IonIcon>
+            </IonButton>
           </IonToolbar>
         </IonFooter>
       </IonPage>

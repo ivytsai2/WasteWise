@@ -1,16 +1,10 @@
-import { IonBackButton, IonButton, IonContent, IonHeader, IonPage, IonSearchbar, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
+import { IonBackButton, IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonPage, IonSearchbar, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
 import React, { useEffect, useState } from 'react';
 import FetchData from '../components/FetchData';
 import Items from '../assets/waste_items.json'
+import { chatbox, homeSharp, camera } from 'ionicons/icons';
 
 const List: React.FC = () => {
-    const packageId =  "76ea33f1-31f0-42ea-a295-385fb4d94ea9";
-    const datastore_resource_id = '274fde37-233c-485d-bc68-8177f0793412';
-    const id = 'waste-wizard-lookup-table'
-    const url=`/api/3/action/package_show?id=${id}`;
-    const urlTest = 'https://randomuser.me/api?results=10'
-    const urlDataCSV = 'dataset/76ea33f1-31f0-42ea-a295-385fb4d94ea9/resource/19df17bb-c259-4402-9dbf-e88f96154793/download/2023-12-11-waste-wizard-data-in-towaste-app-for-open-data.xlsx'
-    const urlData = '/dataset/76ea33f1-31f0-42ea-a295-385fb4d94ea9/resource/274fde37-233c-485d-bc68-8177f0793412/download/2023-11-27-waste-wizard-data-from-towaste-app.json'
     const [packageData, setPackageData] = useState(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [items, setItems] = useState<any[]>([]);
@@ -47,6 +41,19 @@ const List: React.FC = () => {
                 <IonContent className="ion-padding">
                     Most popular items
                 </IonContent>
+                <IonFooter>
+                    <IonToolbar className="ion-text-center">
+                        <IonButton routerLink='../wastewise/chatbot' fill='clear' shape='round'>
+                            <IonIcon icon={chatbox} slot="icon-only"></IonIcon>
+                        </IonButton>
+                        <IonButton routerLink='../' fill='clear' shape='round' size='large'>
+                            <IonIcon icon={homeSharp} slot="icon-only"></IonIcon>
+                        </IonButton>
+                        <IonButton routerLink='../wastewise/scan&sort' fill='clear' shape='round'>
+                            <IonIcon icon={camera} slot="icon-only"></IonIcon>
+                        </IonButton>
+                    </IonToolbar>
+                </IonFooter>
             </IonPage>
         );
     };

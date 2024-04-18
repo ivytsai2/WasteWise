@@ -30,7 +30,7 @@
     --border-width-left: 0;
     --border-width: initial;
     position: fixed;
-    bottom: 5%;
+    bottom: 10%;
     width: 90%;
     --ion-background-color: white;
     background-color: var(--ion-background-color)

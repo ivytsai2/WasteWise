@@ -2,7 +2,7 @@ import { IonBackButton, IonButton, IonCard, IonCardContent, IonContent, IonFoote
 import React, { useEffect, useState } from 'react';
 import Bot from '../assets/bot.png'
 import './Chatbot.css'
-import {arrowRedoSharp} from 'ionicons/icons'
+import {arrowRedoSharp, camera, homeSharp, chatbox} from 'ionicons/icons'
 
 const Chatbot: React.FC = () => {
     const [messages, setMessages] = useState<string[]>([]);
@@ -95,6 +95,19 @@ const Chatbot: React.FC = () => {
                 </IonItem>
             </IonContent>
         )}
+            <IonFooter>
+                <IonToolbar className="ion-text-center">
+                    <IonButton color={'warning'} fill='clear' shape='round'>
+                        <IonIcon icon={chatbox} slot="icon-only"></IonIcon>
+                    </IonButton>
+                    <IonButton routerLink='../' fill='clear' shape='round' size='large'>
+                        <IonIcon icon={homeSharp} slot="icon-only"></IonIcon>
+                    </IonButton>
+                    <IonButton routerLink='../wastewise/scan&sort' fill='clear' shape='round'>
+                        <IonIcon icon={camera} slot="icon-only"></IonIcon>
+                    </IonButton>
+                </IonToolbar>
+            </IonFooter>
         </IonPage>
     );
 };
