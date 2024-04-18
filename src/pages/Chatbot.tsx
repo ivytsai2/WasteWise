@@ -1,9 +1,13 @@
-import { IonBackButton, IonButton, IonContent, IonHeader, IonInput, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React, { useEffect, useState } from 'react';
+import Bot from '../assets/bot.png'
+import './Chatbot.css'
+import {arrowRedoSharp} from 'ionicons/icons'
 
 const Chatbot: React.FC = () => {
     const [messages, setMessages] = useState<string[]>([]);
     const [inputMessage, setInputMessage] = useState<string>('');
+    const [chating, setChating] = useState<boolean>(false)
 
     const handleSubmit = async () => {
         if (inputMessage.trim() !== '') { // Check if input message is not empty
@@ -33,6 +37,14 @@ const Chatbot: React.FC = () => {
         }
     };
 
+    const startChat = async () => {
+        setChating(true)
+    }
+
+    useEffect(() => {
+        setInputMessage('');
+    }, [messages]);
+
     return (
         <IonPage>
             <IonHeader>
@@ -41,26 +53,48 @@ const Chatbot: React.FC = () => {
                         <IonBackButton>
                         </IonBackButton>
                     </IonButton>
-                    <IonTitle>WasteWise</IonTitle>
+                    <IonTitle>Chat with WasteWise</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding">
-                <IonList>
-                    {messages.map((message, index) => (
-                        <IonItem key={index}>
-                            <IonLabel>{message}</IonLabel>
-                        </IonItem>
-                    ))}
+            {!chating ? 
+            (<IonContent className="ion-text-center ion-padding chatbot">
+                <br/>
+                <br/>
+                <h1><b>How can we assist with your recycling queries today?</b></h1>
+                <p>Welcome to WasteWise, your smart sorting assistant.
+                    Unsure about where to toss your takeaway coffee cup or pizza box?
+                    Just ask away!
+                </p>
+                <br/>
+                <br/>
+                <img src={Bot} alt='Bot Image'/>
+                <IonButton color={'light'} onClick={startChat}>Get Sorting Help</IonButton>
+            </IonContent>):(
+            <IonContent className="ion-padding chatbot">
+                <IonList lines="none" className='msg-window'>
+                    {messages.map((message, index) => {
+                        const isUserMessage = message.startsWith('You: ');
+                        const messageClass = isUserMessage ? 'user-msg' : 'bot-msg';
+                        return (
+                            <IonItem key={index} className='msg-boxes'>
+                                <IonCard className={messageClass}
+                                ><IonCardContent>{message}</IonCardContent></IonCard>
+                            </IonItem>
+                        );
+                    })}
                 </IonList>
-                <IonItem>
-                    <IonInput
-                        value={inputMessage}
-                        placeholder="Type your message here..."
+                <IonItem lines='none' className='input-box'>
+                    <IonInput value={inputMessage}
+                        placeholder="Ask me about waste sorting..."
                         onIonChange={(e) => setInputMessage(e.detail.value!)} // Update inputMessage state on change
-                    ></IonInput>
-                    <IonButton onClick={handleSubmit}>Send</IonButton> {/* Button to submit message */}
+                    > 
+                        <IonButton fill='clear' slot="end" color='dark' onClick={handleSubmit}>
+                            <IonIcon slot="icon-only" icon={arrowRedoSharp}></IonIcon>
+                        </IonButton>
+                    </IonInput>
                 </IonItem>
             </IonContent>
+        )}
         </IonPage>
     );
 };
