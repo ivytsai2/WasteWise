@@ -14,8 +14,8 @@ import ScheduleIcon from '../assets/schedule.png';
 import './Home.css';
 import { Preferences } from '@capacitor/preferences';
 import { Redirect, Route } from 'react-router';
-import Recycle from './Recycle';
 import List from './List';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const INTRO_KEY = 'intro-seen';
@@ -81,46 +81,58 @@ const Home: React.FC = () => {
           </IonToolbar>
           <img id='menuicon' src={Menu} alt='Menu Logo'/>
           <br />
-          <br />
           <IonGrid>
             <IonRow>
               <IonCol class='ion-text-center'>
-                <IonButton routerLink='/wastewise/recycle' type='button' 
-                  shape='round' color='fill' id='recycleBtn'>
-                  <img src={RecycleIcon} alt='Recycle Icon'/>
-                </IonButton>
+                <Link to={{
+                  pathname: '/wastewise/recycle',
+                  state: {page: 'recycle'}
+                }}>
+                  <IonButton shape='round' color='fill' id='recycleBtn'>
+                    <img src={RecycleIcon} alt='Recycle Icon'/>
+                  </IonButton>
+                </Link>
                 <br />
                 Recycle
               </IonCol>
               <IonCol class='ion-text-center'>
-                <IonButton routerLink='/wastewise/compost' type='button' 
-                  shape='round' color='fill' id='compostBtn'>
-                  <img src={CompostIcon} alt='Compost Icon'/>
-                </IonButton>
+                <Link to={{
+                  pathname: '/wastewise/compost',
+                  state: {page: 'compost'}
+                }}>
+                  <IonButton shape='round' color='fill' id='compostBtn'>
+                    <img src={CompostIcon} alt='Compost Icon'/>
+                  </IonButton>
+                </Link>
                 <br />
                 Compost
               </IonCol>
               <IonCol class='ion-text-center'>
-                <IonButton routerLink='/wastewise/garbage' type='button' 
-                  shape='round' color='fill' id='garbageBtn'>
-                  <img src={GarbageIcon} alt='Garbage Icon'/>
-                </IonButton>
+                <Link to={{
+                  pathname: '/wastewise/garbage',
+                  state: {page: 'garbage'}
+                }}>
+                  <IonButton shape='round' color='fill' id='garbageBtn'>
+                    <img src={GarbageIcon} alt='Garbage Icon'/>
+                  </IonButton>
+                </Link>
                 <br />
                 Garbage
               </IonCol>
               <IonCol class='ion-text-center'>
-                <IonButton routerLink='/wastewise/yard' type='button' 
-                  shape='round' color='fill' id='yardBtn'>
-                  <img src={YardIcon} alt='Yard Icon'/>
-                </IonButton>
+                <Link to={{
+                  pathname: '/wastewise/yard',
+                  state: {page: 'yard'}
+                }}>
+                  <IonButton shape='round' color='fill' id='yardBtn'>
+                    <img src={YardIcon} alt='Yard Icon'/>
+                  </IonButton>
+                </Link>
                 <br />
                 Yard
               </IonCol>
             </IonRow>
           </IonGrid>
-          <br />
-          <br />
-          <br />
           <IonGrid>
             <IonRow>
               <IonCol class='ion-text-center feature-card'>
