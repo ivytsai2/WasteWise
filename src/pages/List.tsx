@@ -1,7 +1,7 @@
 import { IonBackButton, IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonPage, IonSearchbar, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
 import React, { useEffect, useState } from 'react';
 import FetchData from '../components/FetchData';
-import Items from '../assets/waste_items.json'
+import Items from '../images/waste_items.json'
 import { chatbox, homeSharp, camera } from 'ionicons/icons';
 
 const List: React.FC = () => {

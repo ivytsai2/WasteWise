@@ -2,15 +2,15 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonIco
 import React, { useEffect, useState } from 'react';
 import {homeOutline, logInOutline, newspaperOutline, personCircleOutline} from 'ionicons/icons'
 import Intro from '../components/Intro';
-import Menu from '../assets/menu.png';
-import RecycleIcon from '../assets/recycle.png';
-import CompostIcon from '../assets/compost.png';
-import GarbageIcon from '../assets/garbage.png';
-import YardIcon from '../assets/yard.png';
-import SortIcon from '../assets/sort.png';
-import ChatbotIcon from '../assets/chatbot.png';
-import MapIcon from '../assets/map.png';
-import ScheduleIcon from '../assets/schedule.png';
+import Menu from '../images/menu.png';
+import RecycleIcon from '../images/recycle.png';
+import CompostIcon from '../images/compost.png';
+import GarbageIcon from '../images/garbage.png';
+import YardIcon from '../images/yard.png';
+import SortIcon from '../images/sort.png';
+import ChatbotIcon from '../images/chatbot.png';
+import MapIcon from '../images/map.png';
+import ScheduleIcon from '../images/schedule.png';
 import './Home.css';
 import { Preferences } from '@capacitor/preferences';
 import { Redirect, Route } from 'react-router';

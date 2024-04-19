@@ -2,7 +2,7 @@ import { Camera, CameraResultType } from '@capacitor/camera';
 import { IonBackButton, IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React, { useEffect, useState } from 'react';
 import './ScanAndSort.css';
-import CameraIcon from '../assets/camera.png';
+import CameraIcon from '../images/camera.png';
 import { chatbox, homeSharp, camera } from 'ionicons/icons';
 
 const ScanAndSort: React.FC = () => {

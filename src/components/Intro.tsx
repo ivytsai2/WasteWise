@@ -3,8 +3,8 @@ import React from 'react';
 import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import 'swiper/css';
 import './Intro.css'
-import WasteWiseLogo from '../assets/logo.png'
-import Features from '../assets/features.png'
+import WasteWiseLogo from '../images/logo.png'
+import Features from '../images/features.png'
 
 interface ContainerProps { 
   onFinish: () => void;

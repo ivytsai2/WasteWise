@@ -1,7 +1,7 @@
 import { IonButton, IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonIcon, IonInput, IonPage, IonTitle, IonToolbar, useIonRouter } from '@ionic/react';
 import React, { useState } from 'react';
 import {logInOutline, personCircleOutline} from 'ionicons/icons'
-import WasteWiseLogo from '../assets/logo.png'
+import WasteWiseLogo from '../images/logo.png'
 import Intro from '../components/Intro';
 
 const Login: React.FC = () => {

@@ -1,6 +1,6 @@
 import { IonBackButton, IonButton, IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React, { useEffect, useState } from 'react';
-import Bot from '../assets/bot.png'
+import Bot from '../images/bot.png'
 import './Chatbot.css'
 import {arrowRedoSharp, camera, homeSharp, chatbox} from 'ionicons/icons'
 
