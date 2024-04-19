@@ -7,7 +7,7 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 defineCustomElements(window);
 root.render(
-  //<React.StrictMode>
-  <App />
-  //</React.StrictMode>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
