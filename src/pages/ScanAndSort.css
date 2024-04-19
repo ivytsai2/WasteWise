@@ -1,6 +1,6 @@
 .background-img {
-    --background: url('../assets/plasticBottle.png') no-repeat cover fixed center;
-    background: url('../assets/plasticBottle.png') no-repeat fixed center; 
+    --background: url('../images/plasticBottle.png') no-repeat cover fixed center;
+    background: url('../images/plasticBottle.png') no-repeat fixed center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
