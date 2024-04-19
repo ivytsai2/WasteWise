@@ -46,24 +46,37 @@ ionic cap open ios
 ionic cap run ios
 ```
 ## Application Screens (Android)
-* Splash Screen
-![Splash](screenshots_android/Splash.png)
-* Intro Pages (component 'Intro' attached to home page)
-![IntroSatrt](screenshots_android/Intro1.png)
-![IntroFinish](screenshots_android/Intro2.png)
-* Home Page (Collection Schedule and Drop-off Depots features are disabled)
-![Home](screenshots_android/Home.png)
-* Recycle, Compost, Garbage, Yard pages (all sharing the same page format 'WasteSetOutTips.tsx')
-![Recycle](screenshots_android/Recycle.png)
-![Compost](screenshots_android/Compost.png)
-![Garbage](screenshots_android/Garbage.png)
-![Yard](screenshots_android/Yard.png)
-* Scan and Sort Page Actions
-![Take photo](screenshots_android/Scan&Sort.png)
-![Scan and Sort](screenshots_android/Scan&SortResult.png)
-* Chatbot page Actons
-![Start chat](screenshots_android/Chatbot_Intro.png)
-![Chatbot](screenshots_android/Chatbot.png)
+Splash Screen
+<img src='screenshots_android/Splash.png' width='200'>
+
+Intro Pages (component 'Intro' attached to home page)
+<p float="left">
+  <img src='screenshots_android/Intro1.png' width='200'>
+  <img src='screenshots_android/Intro2.png' width='200'>
+</p>
+
+Home Page (Collection Schedule and Drop-off Depots features are disabled)
+<img src='screenshots_android/Home.png' width='200'>
+
+Recycle, Compost, Garbage, Yard pages (all sharing the same page format 'WasteSetOutTips.tsx')
+<p float="left">
+  <img src='screenshots_android/Recycle.png' width='200'>
+  <img src='screenshots_android/Compost.png' width='200'>
+  <img src='screenshots_android/Garbage.png' width='200'>
+  <img src='screenshots_android/Yard.png' width='200'>
+</p>
+
+Scan and Sort Page
+<p float="left">
+  <img src='screenshots_android/Scan&Sort.png' width='200'>
+  <img src='screenshots_android/Scan&SortResult.png' width='200'>
+</p>
+
+Chatbot page
+<p float="left">
+  <img src='screenshots_android/Chatbot_Intro.png' width='200'>
+  <img src='screenshots_android/Chatbot.png' width='200'>
+</p>
 
 ## Help
 
