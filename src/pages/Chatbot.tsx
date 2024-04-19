@@ -23,7 +23,7 @@ const Chatbot: React.FC = () => {
             };
             const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
             const serverUrl = 'http://ec2-54-166-194-21.compute-1.amazonaws.com:8080/chatbot';
-            const response = await fetch(serverUrl, requestOptions);
+            const response = await fetch(corsProxyUrl + serverUrl, requestOptions);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             } else {
