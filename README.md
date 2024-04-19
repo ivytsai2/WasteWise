@@ -47,7 +47,9 @@ ionic cap run ios
 ```
 ## Application Screens (Android)
 Splash Screen
-<img src='screenshots_android/Splash.png' width='200'>
+<p float="left">
+    <img src='screenshots_android/Splash.png' width='200'>
+</p>
 
 Intro Pages (component 'Intro' attached to home page)
 <p float="left">
