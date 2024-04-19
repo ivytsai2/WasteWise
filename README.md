@@ -46,21 +46,23 @@ ionic cap open ios
 ionic cap run ios
 ```
 ## Application Screens (Android)
-Splash Screen
+*Splash Screen
 <p float="left">
     <img src='screenshots_android/Splash.png' width='200'>
 </p>
 
-Intro Pages (component 'Intro' attached to home page)
+*Intro Pages (component 'Intro' attached to home page)
 <p float="left">
   <img src='screenshots_android/Intro1.png' width='200'>
   <img src='screenshots_android/Intro2.png' width='200'>
 </p>
 
-Home Page (Collection Schedule and Drop-off Depots features are disabled)
-<img src='screenshots_android/Home.png' width='200'>
+*Home Page (Collection Schedule and Drop-off Depots features are disabled)
+<p float="left">
+  <img src='screenshots_android/Home.png' width='200'>
+</p>
 
-Recycle, Compost, Garbage, Yard pages (all sharing the same page format 'WasteSetOutTips.tsx')
+*Recycle, Compost, Garbage, Yard pages (all sharing the same page format 'WasteSetOutTips.tsx')
 <p float="left">
   <img src='screenshots_android/Recycle.png' width='200'>
   <img src='screenshots_android/Compost.png' width='200'>
@@ -68,13 +70,13 @@ Recycle, Compost, Garbage, Yard pages (all sharing the same page format 'WasteSe
   <img src='screenshots_android/Yard.png' width='200'>
 </p>
 
-Scan and Sort Page
+*Scan and Sort Page
 <p float="left">
   <img src='screenshots_android/Scan&Sort.png' width='200'>
   <img src='screenshots_android/Scan&SortResult.png' width='200'>
 </p>
 
-Chatbot page
+*Chatbot page
 <p float="left">
   <img src='screenshots_android/Chatbot_Intro.png' width='200'>
   <img src='screenshots_android/Chatbot.png' width='200'>
