@@ -53,7 +53,7 @@ const ScanAndSort: React.FC = () => {
             };
 
             const formData = new FormData();
-            formData.append('image', image.base64String);
+            formData.append('image', String(image.base64String));
             //formData.append('test', "True");
 
             const requestOptions = {
