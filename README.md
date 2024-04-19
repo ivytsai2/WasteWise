@@ -45,6 +45,11 @@ ionic cap open ios
 ```
 ionic cap run ios
 ```
+## For Quick Testing of the Demo Application (Android) or in Webbrowser
+* Go to https://cors-anywhere.herokuapp.com and request temporary access to the demo server
+* Go to URL: https://marvelous-fudge-4b7368.netlify.app
+* Test the WasteWise Toronto app (see guide below)
+
 ## Application Screens (Android)
 * Splash Screen
 <p float="left">
