@@ -5,5 +5,5 @@ langchain
 langchain-community 
 langchainhub 
 chromadb 
-bs4 l
-angchain_google_genai
+bs4 
+langchain_google_genai
