@@ -34,11 +34,11 @@ ionic serve
 ionic build
 ionic cap sync
 ```
-* Open android project in android studio (make sure a device is setup for android studio):
+* Open android project in android studio:
 ```
 ionic cap open android
 ```
-* Run the android project:
+* Run the android project (make sure a device is setup for android studio):
 ```
 ionic cap run android
 ```
