@@ -11,7 +11,7 @@ The Ionic project was built with the Capacitor package to create Android and IOS
 ### Dependencies
 
 * Node.js and npm are required to run the project.
-* Android Studio is required to run the andriod project.
+* Android Studio is required to run the android project.
 * Xcode is required to run the ios project.
 
 ### Installing
@@ -25,23 +25,28 @@ The Ionic project was built with the Capacitor package to create Android and IOS
 ```
 npm install
 ```
-* To run the web project:
+* Run the web project:
 ```
 ionic serve
 ```
-* To open android project in android studio (make sure a device is set for android studio):
+* To run android or ios project:
+```
+ionic build
+ionic cap sync
+```
+* Open android project in android studio (make sure a device is setup for android studio):
 ```
 ionic cap open android
 ```
-* To run the android project:
+* Run the android project:
 ```
 ionic cap run android
 ```
-* To open ios project in Xcode:
+* Open ios project in Xcode:
 ```
 ionic cap open ios
 ```
-* To run the ios project:
+* Run the ios project:
 ```
 ionic cap run ios
 ```
