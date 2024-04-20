@@ -1,0 +1,21 @@
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin: 20px 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.link-style {
+    font-weight: bold;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}

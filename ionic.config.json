@@ -1,7 +1,0 @@
-{
-  "name": "WasteWise",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}

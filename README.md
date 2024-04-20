@@ -1,51 +1,18 @@
 # WasteWise Application
 
-This directory contains the WasteWise App frontend built with Ionic React from Ionic Framework.
+This directory contains the WasteWise Toronto Application, the Business Pitch with Technical presentation and the report.
+
+Group #2’s Team members:
+* Ivy Tsai 
+* Jeffrey Ching Lok Ng
+* Fatima Aghapourasl
+* Penelope De Freitas
 
 ## Description
 
-The Ionic project was built with the Capacitor package to create Android and IOS projects.
+WasteWise is a smart waste management app for the City of Toronto. Its AI-powered features include an object detection model for images that detects and predicts object classes. From that, the app generates the correct disposal bin (blue for recycling, green for compost/organics, black for garbage) for the waste object, as well as a chatbot to answer waste management-related questions.
 
-## Getting Started
-
-### Dependencies
-
-* Node.js and npm are required to run the project.
-* Android Studio is required to run the andriod project.
-* Xcode is required to run the ios project.
-
-### Installing
-
-* Clone this github folder to your desired directory for WasteWise App frontend.
-
-### Executing program
-
-* Open terminal and navigate to your directory and run the codes below.
-* Install required packages for the project, ex: ionic and capacitor.
-```
-npm install
-```
-* To run the web project:
-```
-ionic serve
-```
-* To open android project in android studio (make sure a device is set for android studio):
-```
-ionic cap open android
-```
-* To run the android project:
-```
-ionic cap run android
-```
-* To open ios project in Xcode:
-```
-ionic cap open ios
-```
-* To run the ios project:
-```
-ionic cap run ios
-```
-## For Quick Testing of the Demo Application (Android) or in Webbrowser
+## For Quick Testing of the Demo Application in Web browser
 * Go to https://cors-anywhere.herokuapp.com and request temporary access to the demo server
 * Go to URL: https://marvelous-fudge-4b7368.netlify.app
 * Test the WasteWise Toronto app (see guide below)
@@ -86,7 +53,3 @@ ionic cap run ios
   <img src='screenshots_android/Chatbot_Intro.png' width='200'>
   <img src='screenshots_android/Chatbot.png' width='200'>
 </p>
-
-## Help
-
-Questions regarding the ionic react app please refer to their [official site](https://ionicframework.com/docs/react).

@@ -1,0 +1,48 @@
+.chatbot {
+    --ion-background-color: #E6EBE6;
+    background-color: var(--ion-background-color)
+}
+
+.user-msg {
+    background-color: #4DCD99;
+    color: black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.bot-msg {
+    background-color: #027F73;
+    color: white;
+    width: 70%;
+    margin-right: auto;
+    margin-left: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.input-box {
+    --border-width-top: 0;
+    --border-width-right: 0;
+    --border-width-bottom: 0;
+    --border-width-left: 0;
+    --border-width: initial;
+    position: fixed;
+    bottom: 10%;
+    width: 90%;
+    --ion-background-color: white;
+    background-color: var(--ion-background-color)
+}
+
+.msg-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.msg-window {
+    height: 85%;
+    overflow-y: auto;
+}
